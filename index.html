@@ -1,13 +1,49 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+</head>
+
+<body>
+  <div id="app">
+    <div class="pdf-container"></div>
+    <div id="actions">
+
+      <h3>基本</h3>
+      <button id="btnCreatePdfViewer">创建 pdfjs-viewer</button>
+      <button id="btnGetInstance">获取 pdfjs-viewer 实例</button>
+
+      <h3>常规使用</h3>
+      <button id="btnChangeFile">切换文件</button>
+      <button id="btnJumpToPage3">切换到第三页</button>
+      <button id="btnSearchContent">搜索指定内容</button>
+
+      <h3>侧边栏</h3>
+      <button id="btnSidebarOpen">打开侧边栏</button>
+      <button id="btnSidebarClose">关闭侧边栏</button>
+
+      <h3>多语言</h3>
+      <button id="btnChangeToJa">切换到日语</button>
+      <button id="btnChangeToCn">切换到中文</button>
+
+      <h3>缩放</h3>
+      <button id="btnChangeScaleToPageWidth">切换缩放：适应页宽</button>
+      <button id="btnChangeScaleTo300">切换缩放：300%</button>
+
+      <h3>批注模式</h3>
+      <button id="btnChangeAnnotationText">切换至文本批注</button>
+      <button id="btnChangeAnnotationInk">切换至绘制批注</button>
+      <button id="btnChangeAnnotationStamp">切换至图片批注</button>
+      <button id="btnChangeAnnotationNone">退出批注模式</button>
+      <button id="btnAddAnnotationStamp">添加图片（需要先切换到图片批注）</button>
+
+    </div>
+  </div>
+  <script type="module" src="/main.js"></script>
+</body>
+
 </html>
