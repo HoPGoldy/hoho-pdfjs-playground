@@ -72,7 +72,6 @@ const actionSwitchFile = (src) => {
  */
 const actionChangePage = (pageNumber) => {
   const { PDFViewerApplication } = getViewerInstance();
-  console.log('PDFViewerApplication', PDFViewerApplication)
   PDFViewerApplication?.eventBus?.dispatch('pagenumberchanged', {
     value: pageNumber,
   });
@@ -135,6 +134,7 @@ const AnnotationEditorParamsType = {
   HIGHLIGHT_SHOW_ALL: 35
 };
 
+/** 设置批注模式参数 */
 const actionChangeAnnotationParam = (paramType, paramValue) => {
   const { PDFViewerApplication } = getViewerInstance();
   PDFViewerApplication?.eventBus?.dispatch('switchannotationeditorparams', {
